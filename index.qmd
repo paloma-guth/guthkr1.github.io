@@ -1,0 +1,33 @@
+---
+title: "Paloma Guth Kronbauer"
+about:
+  id: intro-heading
+  template: trestles
+  image: images/profilepic.jpg
+  image-shape: round
+  links:
+    - icon: envelope
+      href: mailto:guthkr1@stolaf.edu
+    - icon: github
+      href: https://github.com/paloma-guth
+    - icon: linkedin
+      href: https://www.linkedin.com/in/paloma-guth-kronbauer/
+
+---
+
+:::{#intro-heading}
+
+## Paloma Guth Kronbauer
+
+
+
+### Education
+
+St. Olaf College student
+  Computer Science
+  Mathematics
+  Statistics & Data Science
+:::
+
+### Get in Touch
+
