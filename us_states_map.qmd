@@ -1,0 +1,90 @@
+---
+title: "US States: Pet Ownership"
+---
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+library(maps)
+library(tidyverse)
+library(mdsr) 
+library(viridis)
+
+library(readxl)
+catsvdogs <- read_excel("catsvdogs.xlsx")
+
+us_states <- map_data("state")
+
+catsvdogs<-catsvdogs|>
+  mutate(Location = tolower(Location))
+
+catdog_us_owner<- us_states|>
+  left_join(catsvdogs, by = c("region" = "Location"))
+
+```
+
+### Introduction
+
+This analysis dived into the landscape of pet ownership across the United States. Using data on pet ownership rates at the state level, we aim to uncover trends and variations in the prevalence of pets in households across different regions.
+
+## Mapping Pet Ownership
+
+### Overall Pet Ownership
+
+The first map illustrates the percentage of households with pets in each state. By color-coding the map, we can quickly discern regions with higher or lower rates of pet ownership.
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+catdog_us_owner |>
+  ggplot(mapping = aes(x = long, y = lat, group = group, fill = `Percentage of households with pets`)) +
+  geom_polygon(color = "black") +
+  coord_map() + 
+  labs(fill = "Percentage of \nhouseholds with pets`") +
+  theme_void()+
+  scale_fill_viridis()
+```
+
+### Cat Ownership
+
+The second map zooms in on cat ownership, highlighting states where those companionship is most prevalent. 
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+catdog_us_owner |>
+    ggplot(mapping = aes(x = long, y = lat, group = group, fill = `Percentage of Cat Owners`)) +
+  geom_polygon(color = "black") +
+  coord_map() + 
+  labs(fill = "Percentage of \nhouseholds with cats") +
+  theme_void()+
+  scale_fill_viridis()
+```
+### Dog Ownership
+
+Lastly, we explore the prevalence of dog ownership across US states. We mapped the percentage of households with dogs.
+
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+catdog_us_owner |>
+    ggplot(mapping = aes(x = long, y = lat, group = group, fill = `Percentage of Dog Owners`)) +
+  geom_polygon(color = "black") +
+  coord_map() + 
+  labs(fill = "Percentage of \nhouseholds with dogs") +
+  theme_void()+
+  scale_fill_viridis()
+```
+
+## Conclusion
+
+Personally intrigued by cats, I selected this dataset to learn more about cat ownership trends across the United States. Through these visuals, we've discovered valuable insights into how cat ownership varies across different regions. This analysis has provided a straightforward look at the cultural and geographic factors influencing pet ownership.

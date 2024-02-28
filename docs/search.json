@@ -1,17 +1,24 @@
 [
   {
+    "objectID": "wisconsin_district.html",
+    "href": "wisconsin_district.html",
+    "title": "Analyzing Wisconsin District Elections",
+    "section": "",
+    "text": "Understanding the Data\nThis analysis delves into the data from the 2016 elections across Wisconsin’s congressional districts. Using sophisticated geospatial techniques, we created a digital map that served as the canvas for our exploration.\n\n\n\n\n\n\n\nInsights\nThe resulting map vividly displays the distribution of Republican and Democratic support, revealing the intricate electoral dynamics at play. By examining neighboring districts, we uncovered the subtle influences and relationships that shape the outcome of elections. This insight allows us to grasp the interconnectedness of communities and understand how it impacts the final electoral results.\n\n\n\n\n\n\n\nInteractive Exploration\nTo enhance our understanding, we utilized interactive mapping technology, enabling users to zoom in and explore individual cities within each district. This interactive experience offers a deeper insight into the unique characteristics and political landscapes of each area, enriching our comprehension of Wisconsin’s diverse electorate.\n\n\n\n\n\n\n\n\nConclusion: A Glimpse into Democracy\nIn conclusion, our analysis provides more than just a glimpse into Wisconsin’s electoral landscape; it offers a profound insight into the essence of democracy itself. From the mosaic of opinions to the spirit of civic engagement, every aspect of our analysis underscores the fundamental principles of democracy. Moreover, by shedding light on the intricacies of districting and its influence on electoral outcomes, we gain a deeper appreciation for the complexities inherent in the democratic process."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Paloma Guth Kronbauer",
     "section": "",
-    "text": "St. Olaf College student Computer Science Mathematics Statistics & Data Science"
+    "text": "St. Olaf College student\nComputer Science\nMathematics\nStatistics & Data Science"
   },
   {
     "objectID": "index.html#paloma-guth-kronbauer",
     "href": "index.html#paloma-guth-kronbauer",
     "title": "Paloma Guth Kronbauer",
     "section": "",
-    "text": "St. Olaf College student Computer Science Mathematics Statistics & Data Science"
+    "text": "St. Olaf College student\nComputer Science\nMathematics\nStatistics & Data Science"
   },
   {
     "objectID": "about.html",
@@ -19,5 +26,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "us_states_map.html",
+    "href": "us_states_map.html",
+    "title": "US States: Pet Ownership",
+    "section": "",
+    "text": "This analysis dived into the landscape of pet ownership across the United States. Using data on pet ownership rates at the state level, we aim to uncover trends and variations in the prevalence of pets in households across different regions."
+  },
+  {
+    "objectID": "us_states_map.html#mapping-pet-ownership",
+    "href": "us_states_map.html#mapping-pet-ownership",
+    "title": "US States: Pet Ownership",
+    "section": "Mapping Pet Ownership",
+    "text": "Mapping Pet Ownership\n\nOverall Pet Ownership\nThe first map illustrates the percentage of households with pets in each state. By color-coding the map, we can quickly discern regions with higher or lower rates of pet ownership.\n\n\n\n\n\n\n\nCat Ownership\nThe second map zooms in on cat ownership, highlighting states where those companionship is most prevalent.\n\n\n\n\n\n\n\nDog Ownership\nLastly, we explore the prevalence of dog ownership across US states. We mapped the percentage of households with dogs."
+  },
+  {
+    "objectID": "us_states_map.html#conclusion",
+    "href": "us_states_map.html#conclusion",
+    "title": "US States: Pet Ownership",
+    "section": "Conclusion",
+    "text": "Conclusion\nPersonally intrigued by cats, I selected this dataset to learn more about cat ownership trends across the United States. Through these visuals, we’ve discovered valuable insights into how cat ownership varies across different regions. This analysis has provided a straightforward look at the cultural and geographic factors influencing pet ownership."
   }
 ]

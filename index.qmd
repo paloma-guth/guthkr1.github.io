@@ -3,7 +3,7 @@ title: "Paloma Guth Kronbauer"
 about:
   id: intro-heading
   template: trestles
-  image: images/profilepic.jpg
+  image: profile_pic.jpg
   image-shape: round
   links:
     - icon: envelope
@@ -24,8 +24,11 @@ about:
 ### Education
 
 St. Olaf College student
+
   Computer Science
+  
   Mathematics
+  
   Statistics & Data Science
 :::
 
