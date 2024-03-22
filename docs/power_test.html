@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Paloma Guth Kronbauer</title>
+<title>Paloma Guth Kronbauer - Power Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -126,9 +127,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#paloma-guth-kronbauer" id="toc-paloma-guth-kronbauer" class="nav-link active" data-scroll-target="#paloma-guth-kronbauer">Paloma Guth Kronbauer</a>
+  <li><a href="#the-significance-of-power-analysis" id="toc-the-significance-of-power-analysis" class="nav-link active" data-scroll-target="#the-significance-of-power-analysis">The Significance of Power Analysis</a>
   <ul class="collapse">
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  <li><a href="#statistical-analysis-through-random-samples" id="toc-statistical-analysis-through-random-samples" class="nav-link" data-scroll-target="#statistical-analysis-through-random-samples">Statistical Analysis through Random Samples</a></li>
+  <li><a href="#essence-of-power-tests" id="toc-essence-of-power-tests" class="nav-link" data-scroll-target="#essence-of-power-tests">Essence of Power Tests</a></li>
+  <li><a href="#essence-of-t-tests" id="toc-essence-of-t-tests" class="nav-link" data-scroll-target="#essence-of-t-tests">Essence of t-tests</a></li>
+  </ul></li>
+  <li><a href="#graph-analysis" id="toc-graph-analysis" class="nav-link" data-scroll-target="#graph-analysis">Graph analysis</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#things-i-learned-while-testing-the-code" id="toc-things-i-learned-while-testing-the-code" class="nav-link" data-scroll-target="#things-i-learned-while-testing-the-code">Things I learned while testing the code</a></li>
+  <li><a href="#extra" id="toc-extra" class="nav-link" data-scroll-target="#extra">Extra</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -136,49 +145,69 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="profile_pic.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Paloma Guth Kronbauer</h1>
+<h1 class="title">Power Analysis</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
 </header>
-    <div class="about-links">
-  <a href="mailto:guthkr1@stolaf.edu" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://github.com/paloma-guth" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://www.linkedin.com/in/paloma-guth-kronbauer/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text"></span>
-  </a>
+
+<section id="the-significance-of-power-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="the-significance-of-power-analysis">The Significance of Power Analysis</h2>
+<p>In statistics, power test analysis provides valuable insight into the design and interpretation of a study. By quantifying the likelihood of detecting true effects in experimental data, power analysis becomes an essential tools to assist in determining the sample size needed to detect a meaningful effect within a desired level of confidence. In this analysis, we will perform a power analysis in the context of a two-sample t-test, employing a randomly generated data to simulate a real-world scenario.</p>
+<section id="statistical-analysis-through-random-samples" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-analysis-through-random-samples">Statistical Analysis through Random Samples</h3>
+<p>For this project, simulated observations using a normal distribution format was implemented, what give us a solid groundwork for conducting a comparative analysis between two distinct groups. Furthermore, by making use of a two-sample t-test, the aim was to assess the presence of any significant differences between these groups and also discover the underlying patterns and dynamics inherent within the data.</p>
+</section>
+<section id="essence-of-power-tests" class="level3">
+<h3 class="anchored" data-anchor-id="essence-of-power-tests">Essence of Power Tests</h3>
+<p>A power test was implemented to assess the sensitivity of the t-test in detecting a true difference between the groups. This test is significant due to the fact that a study with low power may fail to detect real effects, leading to incorrect conclusions or wasted resources. By conducting a power analysis, we can estimate the sample size needed to achieve a desired level of power, ensuring that our study has a high probability of detecting true effects if they exist.</p>
+</section>
+<section id="essence-of-t-tests" class="level3">
+<h3 class="anchored" data-anchor-id="essence-of-t-tests">Essence of t-tests</h3>
+<p>The t-test is a statistical test used to determine if there is a significant difference between the means of two groups. It assesses whether the observed difference between the group means is larger than would be expected by random chance alone. The use t-tests in this power analysis was due to the fact that these tests are designed for comparing means between two groups.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="power_test_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
-  </div>
-  <div class="about-contents"><div id="intro-heading">
-<section id="paloma-guth-kronbauer" class="level2">
-<h2 data-anchor-id="paloma-guth-kronbauer">Paloma Guth Kronbauer</h2>
-<section id="education" class="level3">
-<h3 data-anchor-id="education">Education</h3>
-<p>St.&nbsp;Olaf College student</p>
-<p>Computer Science | Mathematics | Statistics &amp; Data Science</p>
+</div>
 </section>
 </section>
-</div></div>
+<section id="graph-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="graph-analysis">Graph analysis</h2>
+<p>In this graph we can observe that the power (y-axis) represents the probability of correctly rejecting the null hypothesis when it is false, in this case, when there is a true difference between the groups. The red horizontal line indicates a power level of 0.80, which is a benchmark for estimating the sample size needed in order to ensure the study will detect the effects if there is any.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In this exploration of the power testing, I could better understand its significant role in study design and interpretation. By estimating the sample size needed to detect meaningful effects, power analysis ensures the reliability of research outcomes and can also avoid waste of funds. By making use of a two-sample t-test with randomly generated data, I aimed to identify significant differences between groups and assess the t-test’s sensitivity.</p>
+<p>Through this project, I gained insight about the importance of simulations and their relevance in real-life scenarios.</p>
+<section id="things-i-learned-while-testing-the-code" class="level3">
+<h3 class="anchored" data-anchor-id="things-i-learned-while-testing-the-code">Things I learned while testing the code</h3>
+<p>In this project, I used set.seed() function to generate the random data. After multiple rounds of testing and additional research, I discovered that this function plays a crucial role in maintaining the reproducibility of our results. This means that while the specific data points within each group may vary slightly due to random variation, the overall pattern and properties of the data will remain the same. It’s important to note that without setting the seed, each time we run the code, we introduce a new source of randomness into the data generation process. As a result, each execution would generate a different random data, leading to variations in the outcomes of our power analysis and also in the plots.</p>
+</section>
+<section id="extra" class="level3">
+<h3 class="anchored" data-anchor-id="extra">Extra</h3>
+<p>After conducting multiple simulations with different parameter values, it became evident that as the means of the two groups gets closer, the power curve tends to exhibit a more gradual slope rather than a steep incline, as showed in the first graph. After some research and pondering about the meaning of this, I came to the conclusion that this observation suggests that when the means of the groups approach parity, the t-test becomes less sensitive in detecting these smaller differences, leading to a less pronounced increase in statistical power.</p>
+<p>The impact of proximity in mean values between groups is evident and can be observed in the graph below. The simulation that produce the following graph made use of a random data generation that have means with only one-unit difference.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="power_test_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 
 
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -201,6 +230,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

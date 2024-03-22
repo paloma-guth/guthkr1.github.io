@@ -25,12 +25,7 @@ about:
 
 St. Olaf College student
 
-  Computer Science
-  
-  Mathematics
-  
+  Computer Science |
+  Mathematics |
   Statistics & Data Science
 :::
-
-### Get in Touch
-
