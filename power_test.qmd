@@ -29,7 +29,6 @@ The t-test is a statistical test used to determine if there is a significant dif
 ```{r}
 #| message: false
 #| warning: false
-#| echo: false
 
 set.seed(345)
 
