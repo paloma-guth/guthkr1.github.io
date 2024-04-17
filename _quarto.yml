@@ -18,6 +18,10 @@ website:
         menu: 
           - text: Power analysis
             href: power_test.qmd
+      - text: Text Analysis
+        menu: 
+          - text: News Headlines
+            href: text_analysis.qmd
             
 
 page-footer:
