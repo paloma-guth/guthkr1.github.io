@@ -51,7 +51,7 @@ headlines_br<-headlines_br|>
 
 headlines_br<-remove_empty(headlines_br, which = "rows")
 
-pt_lexicon <- read.csv("lexico_v2.1txt", header = TRUE)
+pt_lexicon <- read.csv("lexico_v2.txt", header = TRUE)
 colnames(pt_lexicon) <- c("word", "type", "value")
 pt_lexicon<-pt_lexicon|>
   filter(!str_detect(word, "^#"))
